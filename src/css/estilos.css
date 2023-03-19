@@ -1,0 +1,153 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+main:after {
+	content: '';
+	min-height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+	z-index: -1;
+}
+
+.conteudo {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-evenly;
+}
+
+.informacoes .logo {
+	max-width: 350px;
+	margin-bottom: 80px;
+}
+
+.informacoes .logo2 {
+	max-width: 350px;
+	margin-bottom: 80px;
+}
+
+.botoes-cody {
+	margin-bottom: 300px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.botoes-cody .botao {
+	background-color: #ffffff;
+	width: 15px;
+	height: 15px;
+	border-radius: 80%;
+	border: 2px solid transparent;
+	cursor: pointer;
+	border-color: #ce9e00;
+}
+
+.botoes-cody .botao.selecionado {
+	background-color: #1d8346;
+}
+
+.menu-lateral {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.menu-lateral ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-right: 60px;
+}
+
+.menu-lateral .icone {
+	width: 120px;
+	transition: 0.3s ease-in-out;
+}
+
+.menu-lateral .icone:hover {
+	transform: scale(1.1);
+}
+
+.menu-lateral .icone2 {
+	width: 120px;
+	margin-top: 10px;
+	transition: 0.3s ease-in-out;
+}
+
+.menu-lateral .icone2:hover {
+	transform: scale(1.1);
+}
+
+.cody {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.cody .imagem {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	display: none;
+	animation: mudarImagem 0.7s;
+}
+
+.cody .imagem.ativa {
+	display: block;
+}
+
+video {
+	position:fixed;
+	border-radius: 20px;
+	right: 960px;
+	bottom: 49px;
+	width: 350px;
+	opacity: 0.6;
+	transition: transform 0.5s ease;
+}
+
+video:hover {
+	transform: scale(1.1);
+  }
+
+  p {
+    position: fixed;
+    bottom: 8px;
+	border: 3px solid #1d8346;
+	border-radius: 8px;
+	color:#ce9e00;
+
+  }
+
+  
+
+@keyframes mudarImagem {
+	from {
+		opacity: 0.85;
+	}
+	to {
+		opacity: 1;
+	}
+}
+  
+  
+  
+  
+  
+
+
+ 
